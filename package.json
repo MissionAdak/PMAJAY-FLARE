@@ -1,0 +1,27 @@
+{
+  "name": "pm-ajay-agency-mapping-system",
+  "version": "1.0.0",
+  "description": "PM-AJAY Agency Mapping System for Smart India Hackathon 2024",
+  "scripts": {
+    "install-all": "cd backend && npm install && cd ../frontend && npm install",
+    "start-backend": "cd backend && npm start",
+    "start-frontend": "cd frontend && npm run dev",
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "build": "cd frontend && npm run build",
+    "dev": "concurrently \"cd backend && npm start\" \"cd frontend && npm run dev\""
+  },
+  "keywords": [
+    "pm-ajay",
+    "agency-mapping",
+    "government",
+    "sih-2024",
+    "react",
+    "nodejs",
+    "express"
+  ],
+  "author": "Smart India Hackathon 2024 Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

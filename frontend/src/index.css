@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Roboto', 'Open Sans', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #F8F9FA;
+    color: #333333;
+    @apply antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: #0b1b4d;
+    font-family: 'Poppins', 'Merriweather', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  }
+  a {
+    color: #0056B3;
+  }
+  a:hover {
+    color: #003f82;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 shadow-sm hover:shadow-md;
+    background-color: #FF9933;
+  }
+  .btn-primary:hover {
+    background-color: #e6892d;
+  }
+  
+  .btn-secondary {
+    @apply bg-white px-4 py-2 rounded-lg font-medium transition-colors duration-200;
+    color: #000080;
+    border: 1px solid #138808;
+  }
+  .btn-secondary:hover {
+    background-color: #F8F9FA;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200 p-6 border border-gray-200;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg outline-none transition-all duration-200 placeholder:text-gray-500 focus:ring-2 focus:ring-blue-600 focus:border-transparent;
+    background-color: #F8F9FA;
+  }
+  
+  .label {
+    @apply block text-sm font-medium mb-2;
+    color: #555555;
+  }
+}
+
+@layer utilities {
+  .heading {
+    font-family: 'Poppins', 'Merriweather', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+    color: #000080;
+  }
+}
